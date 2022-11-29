@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC ">
+<html>
+    <head>
+        <title>Tipos de triangulos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algoritmo()
+{
+    let lado1, lado2, lado3;
+    lado1 = parseFloat (document.formulario1.lado1.value);
+    lado2 = parseFloat (document.formulario1.lado2.value);
+    lado3 = parseFloat (document.formulario1.lado3.value);
+    if(lado1==lado2&&lado1==lado3)
+        alert('Equil\u00E1tero');
+    if((lado1==lado2&&lado1!=lado3)||(lado1==lado3&&lado1!=lado2)||(lado2==lado3&&lado2!=lado1))
+        alert('Is\u00F3sceles');
+    if(lado1!=lado2&&lado1!=lado3&&lado2!=lado3)
+        alert('Escaleno');
+}
+ 
+        </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="lado1">Ingresa el valor del primer lado :</label>
+                        </td>
+                        <td>
+                            <input name="lado1" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lado2">Ingresa el valor del segundo lado :</label>
+                        </td>
+                        <td>
+                            <input name="lado2" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lado3">Ingresa el valor del tercer lado :</label>
+                        </td>
+                        <td>
+                            <input name="lado3" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
