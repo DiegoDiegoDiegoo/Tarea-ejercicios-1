@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Recorrido = 1, Tiempo = 1, SumaTiempo = 0;
+        while(Tiempo != 0){
+            Tiempo = parseInt(prompt("Recorrido"))
+            console.log ("recorrido",Recorrido,":", Tiempo)
+
+            SumaTiempo = SumaTiempo + Tiempo;
+            Recorrido++;
+        }
+        let Horas;
+        Horas = SumaTiempo/60;
+        console.log("Horas de recorrido:",Horas.toFixed(2));
+    </script>
+</body>
+</html>
